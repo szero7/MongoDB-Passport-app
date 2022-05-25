@@ -1,0 +1,41 @@
+<div id="search">
+    <div class="mt-5">
+        <form action="/giveResult" method="get" class="w-50 mx-auto"><br><br><br>
+            <h2>Search Product</h2>
+            <input class="form-control" name="code" id="code" type="text" placeholder="Product Code ">
+            <br>
+            <button class="form-control btn btn-info" type="submit">Search in Database</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <%- include("partials/messages") -%>
+    </div>
+    <% if(!!product) {%>
+        <div class="container mt-5 w-50 mx-auto">
+            <h5 class="text-danger">Search results:</h5>
+            <table class="table table-bordered " width="100% " cellspacing="0 ">
+                <thead>
+                    <tr>
+                        <th> Code </th>
+                        <th> Description </th>
+                        <th> Price </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <%= product.code %>
+                        </td>
+                        <td>
+                            <%= product.description %>
+                        </td>
+                        <td>
+                            <%= product.price %> $
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>
+<% } %>

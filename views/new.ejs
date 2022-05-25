@@ -1,0 +1,11 @@
+<div id="new">
+    <div class="mt-5">
+        <form action="/product/new" method="post" class="w-50 mx-auto"><br><br>
+            <h2>Add New Product </h2>
+            <input name="code" value="<%= product.code %>" type="text" class="form-control" placeholder="Product code" required>
+            <input name="description" value="<%= product.description %>" type="text" class="form-control" placeholder="Product description" required>
+            <input name="price" value="<%= product.price %>" type="text" class="form-control" placeholder="Product price" required>
+            <button class="form-control btn btn-info" type="submit">Add to Database</button>
+        </form>
+    </div>
+</div>

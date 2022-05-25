@@ -1,0 +1,9 @@
+<div id="edit">
+    <form action="/edit/<%= product.id %>?_method=put" method="post" class="w-50 mx-auto"><br><br>
+        <h2>Update Product Data</h2>
+        <input name="code" value="<%= product.code %>" type="text" class="form-control" placeholder="<%= product.code %>" required>
+        <input name="description" value="<%= product.description %>" type="text" class="form-control" placeholder="<%= product.description %>" required>
+        <input name="price" value="<%= product.price %>" type="text" class="form-control" placeholder="<%= product.price %>" required>
+        <button class="form-control btn btn-info" type="submit">Update Product</button>
+    </form>
+</div>

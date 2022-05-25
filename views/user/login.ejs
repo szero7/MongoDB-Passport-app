@@ -1,0 +1,20 @@
+<div class="jumbotron jumbotron-fluid bg-light mt-5 row justify-content-md-center">
+
+    <div class="data-form col-md-6">
+        <form action="/user/login" method="POST">
+            <h1 class="text-center mb-3">Product Database System</h1>
+            <%- include("../partials/messages") -%>
+                <label for="inputEmail">Email address</label>
+                <input type="email" name="email" id="inputEmail" class="form-control mb-3" placeholder="Email address">
+                <label for="inputPassword">Password</label>
+                <input type="password" name="password" id="inputPassword" class="form-control mb-3" placeholder="Password">
+                <a href="#">Forgot password ?</a>
+                <button class="btn btn-lg btn-info btn-block mt-3 mb-2" type="submit">Login</button>
+                <span>By continuing you agree to our <a href="#">Terms and Conditions</a>, our <a href="#">Privacy Policy</a>, and the <a href="#">Product Database System® Program Terms</a>.</span>
+                <br>
+                <hr>
+                <div class="mt-3"><span>Don't have an account ? <a href="/user/register">Create an account</a></span></div>
+        </form>
+    </div>
+
+</div>
